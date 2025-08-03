@@ -1,5 +1,36 @@
 "use strict";
 
+const imageSourcesCumuli = [
+  "/images/cumuli/TF_CUMULI_00001.jpg",
+  "/images/cumuli/TF_CUMULI_00002.jpg",
+  "/images/cumuli/TF_CUMULI_00003.jpg",
+  "/images/cumuli/TF_CUMULI_00004.jpg",
+  "/images/cumuli/TF_CUMULI_00005.jpg",
+  "/images/cumuli/TF_CUMULI_00006.jpg",
+  "/images/cumuli/TF_CUMULI_00007.jpg",
+  "/images/cumuli/TF_CUMULI_00008.jpg",
+  "/images/cumuli/TF_CUMULI_00009.jpg",
+  "/images/cumuli/TF_CUMULI_00010.jpg",
+  "/images/cumuli/TF_CUMULI_00011.jpg",
+  "/images/cumuli/TF_CUMULI_00012.jpg",
+  "/images/cumuli/TF_CUMULI_00013.jpg",
+  "/images/cumuli/TF_CUMULI_00014.jpg",
+  "/images/cumuli/TF_CUMULI_00015.jpg",
+  "/images/cumuli/TF_CUMULI_00016.jpg",
+  "/images/cumuli/TF_CUMULI_00017.jpg",
+  "/images/cumuli/TF_CUMULI_00018.jpg",
+  "/images/cumuli/TF_CUMULI_00019.jpg",
+  "/images/cumuli/TF_CUMULI_00020.jpg",
+  "/images/cumuli/TF_CUMULI_00021.jpg",
+  "/images/cumuli/TF_CUMULI_00022.jpg",
+  "/images/cumuli/TF_CUMULI_00023.jpg",
+  "/images/cumuli/TF_CUMULI_00024.jpg",
+  "/images/cumuli/TF_CUMULI_00025.jpg",
+  "/images/cumuli/TF_CUMULI_00026.jpg",
+  "/images/cumuli/TF_CUMULI_00027.jpg",
+  "/images/cumuli/TF_CUMULI_00028.jpg",
+];
+
 const imageSourcesAerei = [
   "/images/aerei/aerei1.jpg",
   "/images/aerei/aerei2.jpg",
@@ -49,6 +80,7 @@ const imageSourcesAnimali = [
 var folderMap = {
   "images/animali": imageSourcesAnimali,
   "images/aerei": imageSourcesAerei,
+  "images/cumuli": imageSourcesCumuli,
 };
 
 const imageElement = document.getElementById("gallery-image");
