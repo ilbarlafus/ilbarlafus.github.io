@@ -70,6 +70,13 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 #curriculum {
@@ -97,7 +104,5 @@ a {
 #copyright {
   font: #{$font-weight-normal} #{$font-size-small}/#{$line-height-small} $font-family;
 
-  @media screen and (max-width: 1024px) {
-    margin-top: 2rem;
-  }
+  margin-top: 2rem;
 }
