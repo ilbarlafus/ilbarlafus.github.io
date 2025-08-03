@@ -1,0 +1,99 @@
+$font-family: "Times New Roman", Times, serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$font-size-base: 14px;
+$line-height-base: 19px;
+
+$font-size-h1: 15px;
+$line-height-h1: 20px;
+
+$font-size-small: 12px;
+$line-height-small: 16px;
+
+$color-text: black;
+
+$sidebar-flex: 5;
+$gallery-flex: 11;
+
+$sidebar-padding-y: 2.5rem;
+$sidebar-padding-x: 1.25rem;
+$curriculum-gap: 1.2rem;
+
+$long-text-width: 300px;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: #{$font-weight-normal} #{$font-size-base}/#{$line-height-base} $font-family;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    overflow-y: auto;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+
+h1 {
+  font: #{$font-weight-bold} #{$font-size-h1}/#{$line-height-h1} $font-family;
+}
+
+a {
+  color: $color-text;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Layout
+#sidebar {
+  flex: $sidebar-flex;
+  padding: $sidebar-padding-y $sidebar-padding-x;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#curriculum {
+  display: flex;
+  flex-direction: column;
+  gap: $curriculum-gap;
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#gallery {
+  flex: $gallery-flex;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+#copyright {
+  font: #{$font-weight-normal} #{$font-size-small}/#{$line-height-small} $font-family;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 2rem;
+  }
+}
