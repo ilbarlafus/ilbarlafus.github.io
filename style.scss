@@ -59,6 +59,10 @@ a {
   }
 }
 
+.archive-link {
+  width: fit-content;
+}
+
 // Layout
 #sidebar {
   flex: $sidebar-flex;
