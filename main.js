@@ -32,36 +32,31 @@ const imageSourcesCumuli = [
 ];
 
 const imageSourcesAerei = [
-  "/images/aerei/aerei1.webp",
-  "/images/aerei/aerei2.webp",
-  "/images/aerei/aerei3.webp",
-  "/images/aerei/aerei4.webp",
-  "/images/aerei/aerei5.webp",
-  "/images/aerei/aerei6.webp",
-  "/images/aerei/aerei7.webp",
-  "/images/aerei/aerei8.webp",
-  "/images/aerei/aerei9.webp",
-  "/images/aerei/aerei10.webp",
-  "/images/aerei/aerei11.webp",
-  "/images/aerei/aerei12.webp",
-  "/images/aerei/aerei13.webp",
-  "/images/aerei/aerei14.webp",
-  "/images/aerei/aerei15.webp",
-  "/images/aerei/aerei16.webp",
-  "/images/aerei/aerei17.webp",
-  "/images/aerei/aerei18.webp",
-  "/images/aerei/aerei19.webp",
-  "/images/aerei/aerei20.webp",
-  "/images/aerei/aerei21.webp",
-  "/images/aerei/aerei22.webp",
-  "/images/aerei/aerei23.webp",
-  "/images/aerei/aerei24.webp",
-  "/images/aerei/aerei25.webp",
-  "/images/aerei/aerei26.webp",
-  "/images/aerei/aerei27.webp",
-  "/images/aerei/aerei28.webp",
-  "/images/aerei/aerei29.webp",
-  "/images/aerei/aerei30.webp",
+  "/images/aerei-v3/aerei-0.webp",
+  "/images/aerei-v3/aerei-1.webp",
+  "/images/aerei-v3/aerei-2.webp",
+  "/images/aerei-v3/aerei-3.webp",
+  "/images/aerei-v3/aerei-4.webp",
+  "/images/aerei-v3/aerei-5.webp",
+  "/images/aerei-v3/aerei-6.webp",
+  "/images/aerei-v3/aerei-7.webp",
+  "/images/aerei-v3/aerei-8.webp",
+  "/images/aerei-v3/aerei-9.webp",
+  "/images/aerei-v3/aerei-10.webp",
+  "/images/aerei-v3/aerei-11.webp",
+  "/images/aerei-v3/aerei-12.webp",
+  "/images/aerei-v3/aerei-13.webp",
+  "/images/aerei-v3/aerei-14.webp",
+  "/images/aerei-v3/aerei-15.webp",
+  "/images/aerei-v3/aerei-16.webp",
+  "/images/aerei-v3/aerei-17.webp",
+  "/images/aerei-v3/aerei-18.webp",
+  "/images/aerei-v3/aerei-19.webp",
+  "/images/aerei-v3/aerei-20.webp",
+  "/images/aerei-v3/aerei-21.webp",
+  "/images/aerei-v3/aerei-22.webp",
+  "/images/aerei-v3/aerei-23.webp",
+  "/images/aerei-v3/aerei-24.webp",
 ];
 
 const imageSourcesAnimali = [
@@ -79,7 +74,7 @@ const imageSourcesAnimali = [
 
 var folderMap = {
   "images/animali": imageSourcesAnimali,
-  "images/aerei": imageSourcesAerei,
+  "images/aerei-v3": imageSourcesAerei,
   "images/cumuli": imageSourcesCumuli,
 };
 
@@ -89,10 +84,10 @@ const interval = 2000;
 var intervalId = setInterval(() => nextImage(imageSourcesAerei), interval);
 
 var imageIndex = 0;
-var currentFolder = "images/aerei";
+var currentFolder = "images/aerei-v3";
 
 imageElement.addEventListener("click", () =>
-  nextImage(folderMap[currentFolder])
+  nextImage(folderMap[currentFolder]),
 );
 
 imageElement.addEventListener("mouseover", () => clearInterval(intervalId));
@@ -102,10 +97,8 @@ imageElement.addEventListener("mouseout", () => {
 
 // var archiveLinks = document.querySelectorAll(".archive-link");
 function handleArchiveClick(event) {
-  console.log("Archive link clicked");
   event.preventDefault();
   var folder = event.target.getAttribute("data-link");
-  console.log("Selected folder:", folder);
   if (folder == currentFolder) {
     return;
   }
