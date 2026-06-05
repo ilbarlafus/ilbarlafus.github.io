@@ -4,7 +4,7 @@ var folderMap = {
   "animali-2022": 10,
   "aerei-2026": 25,
   "aerei-2023": 30,
-  "cumuli-2024": 30,
+  "cumuli-2024": 21,
 };
 
 const imageElement = document.getElementById("gallery-image");
