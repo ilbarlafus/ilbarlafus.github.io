@@ -1,17 +1,23 @@
 [
   {
+    "year": "2026",
+    "title": "Aerei",
+    "data-link": "aerei-2026"
+  },
+  {
     "year": "2025",
     "title": "CUMULI",
-    "data-link": "images/cumuli"
+    "data-link": "cumuli-2024"
   },
   {
     "year": "2024",
     "title": "Random Animals 01",
-    "data-link": "images/animali"
+    "data-link": "animali-2022"
   },
+
   {
     "year": "2023",
     "title": "Aerei",
-    "data-link": "images/aerei-v3"
+    "data-link": "aerei-2023"
   }
 ]
