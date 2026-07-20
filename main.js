@@ -11,7 +11,7 @@ var folderMap = {
 const imageElement = document.getElementById("gallery-image");
 
 var currentIndex = 1;
-var currentFolder = "aerei-2026";
+var currentFolder = "cielo-2026";
 
 const interval = 2000;
 var intervalId = setInterval(
