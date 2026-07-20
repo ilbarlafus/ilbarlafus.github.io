@@ -5,6 +5,7 @@ var folderMap = {
   "aerei-2026": 25,
   "aerei-2023": 30,
   "cumuli-2024": 21,
+  "cielo-2026": 8,
 };
 
 const imageElement = document.getElementById("gallery-image");
